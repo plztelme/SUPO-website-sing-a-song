@@ -1,0 +1,142 @@
+::selection {
+  background-color: #d91c1f;
+  color: #000000; /* Change text color to black */
+  transition: background-color 0.3s, color 0.3s;
+}
+
+::-moz-selection {
+  background-color: #d91c1f;
+  color: #000000; /* Change text color to black */
+  transition: background-color 0.3s, color 0.3s;
+}
+
+::selection {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+::selection:hover {
+  background-color: #f7931a;
+  color: #000000; /* Ensure text color remains black on hover */
+}
+
+/* Styles for normal state */
+a {
+  color: black;
+  text-decoration: none;
+  transition: color 0.3s ease, color 0.3s ease;
+}
+
+/* Styles for hover state */
+a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+a:visited {
+  color: #6610f2;
+}
+
+a:active {
+  color: #0056b3;
+}
+.navbar {
+    background-color: #1b1c1d;
+    width: 100%;
+    z-index: 1000;
+  }
+  
+  .ff-logo {
+    mix-blend-mode: lighten !important;
+    max-height: 3rem;
+  }
+  
+  /* Styles for the left sidebar */
+  .sidebar {
+    background-color: #1b1c1d;
+    position: fixed;
+    height: 100%;
+    width: 90px; /* Adjust the width as needed */
+    z-index: 1000;
+    top: 56px; /* Adjust based on the height of the top navbar */
+    display: flex;
+    flex-direction: column;
+    padding-top: 1rem;
+  }
+  
+  .sidebar .nav-link {
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    text-decoration: none;
+  }
+  
+  .sidebar .nav-link:hover {
+    background-color: #343a40;
+  }
+.move-right {
+  margin-inline:10em;
+}
+  .card-custom-height {
+    min-height: 30em;
+    max-height: 30em;
+  background-color: #ccc;
+    border: 2px solid transparent;
+  }
+  .card-body {
+    min-height: 20em; /* Set a fixed height for the card body */
+    overflow: hidden; /* Hide overflow content */
+  }
+  
+  .card {
+      margin-top: 12vh;
+  }
+  
+  @media (max-width: 768px) {
+    .sidebar {
+      display: none;
+    }
+
+    .content {
+      margin-left: 0; /* Remove the left margin on smaller screens */
+    }
+  }
+  
+  /* Adjust main content to avoid overlapping with side navbar */
+  .content {
+    margin-left: 220px; /* Adjust based on the width of the sidebar */
+    padding: 2rem;
+    margin-top: 56px; /* Adjust based on the height of the top navbar */
+  }
+  
+.card-custom-height {
+  min-height: 30em;
+  max-height: 40em;
+background-color: #ccc;
+  border: 2px solid transparent;
+}
+.card-body { /* Set a fixed height for the card body */
+  overflow: hidden; /* Hide overflow content */
+}
+
+.card {
+  height: 30em;  
+  background-color: #ccc;
+   border: 2px solid transparent;
+  }
+  
+  @media (min-width: 992px) {
+    .col-md-4 {
+      padding-right: 20px;
+      padding-left: 10px;
+    
+
+    }
+  }
+  
+  @media (min-width: 1200px) {
+    /* Adjust the width of each card column */
+    .col-md-4 {
+      max-width: calc((100% - 40px) / 3); /* Calculate width to fit three cards with margin */
+    }
+  }
+  
